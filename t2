@@ -1,0 +1,5 @@
+import re
+
+result = re.findall('[А-ЯЁA-Z]{2,}', input('Введите предложение: '))
+
+print(result)
