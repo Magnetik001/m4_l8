@@ -1,0 +1,5 @@
+import re
+
+result = re.findall('[A-Za-z0-9\W]{8,24}', input('Введите предложение: '))
+
+print(result)
