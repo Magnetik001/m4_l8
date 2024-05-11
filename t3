@@ -1,0 +1,11 @@
+import re
+
+pattern1 = re.compile(r'\w+ма\w+')
+pattern2 = re.compile(r'\w+ро\w+')
+
+string = input('Введите предложение: ')
+
+result1 = re.findall(pattern1, string) 
+result2 = re.findall(pattern2, string)
+
+print(result1 + result2)
