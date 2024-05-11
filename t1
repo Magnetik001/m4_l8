@@ -1,0 +1,6 @@
+import re
+
+pattern = re.compile(r'\w*-\w*')
+result = re.findall(pattern, input('Введите предложение: '))
+
+print(result)
