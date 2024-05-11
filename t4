@@ -1,0 +1,11 @@
+import re
+
+pattern1 = re.compile(r'<\w+>')
+pattern2 = re.compile(r'</\w+>')
+
+string = input('Введите предложение: ')
+
+string = re.sub(pattern1,'' ,string)
+result = re.sub(pattern2,'' ,string)
+
+print(result)
